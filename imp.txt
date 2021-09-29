@@ -1,0 +1,7 @@
+This program of face detection is done on Google Colab as it have pre-installed Dlib library.
+Before initialising the program first we need to download face recognition modules i.e. !pip install face_recognition
+Also you need to import cv2_imshow modules in google colab
+I have make two directory Known dir. (which contain images ak new and elon) and unknown dir. (i.e ak_1 and elon2).
+In this program i have use face_recognition.compare_faces package from face_recognition module as it compare a list of face encodings against a candidate encoding to see if they match.
+And also i have uses face_recognition.face_distance package from face_recognition module Given a list of face encodings, compare them to a known face encoding and get a euclidean distance for each comparison face. The distance tells you how similar the faces are.
+This program is executed by detecting images from unknown dir. to known dir. the images from unknown dir. which have least distance will be the best match or the possible detect for the face.
